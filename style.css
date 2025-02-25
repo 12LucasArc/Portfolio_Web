@@ -16,9 +16,7 @@
 
 
 
-/*
- * Header
- */
+
 
  .banner-wrap {
      background-image: url(/Assets/Snapchat-82019670.jpg);
@@ -62,3 +60,8 @@
 }
 
 
+.scrolling{
+    background-color: black;
+    opacity: 90%;
+    transition: all 0.5s;
+}
