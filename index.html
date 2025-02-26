@@ -30,10 +30,13 @@
             <a class="nav-link" href="#contact">Contact</a>
         </div>
   </header>
-  <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
-    <h1 class="display-1">I am Lucas Motshophi</h1>
-    <p class="lead">Fullstack Developer, Junior Dev. Softwareprenuer</p>
-  </main>
+          <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
+            <div class="overlay"></div>
+            <main class="text-center">
+                <h1 class="display-1">I am Lucas Motshophi</h1>
+                  <span class="lead" id="typed"></span>
+            </main>
+          </div>
 </div>
 <section id="about-me">
     <div class="container p-5">
@@ -186,12 +189,30 @@
     </div>
   </section>
 
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container p-2">
+      <p class="lead">Developed By Lucas Motshophi</p>
+    </div>
+
+
+  </footer>
+
   <script>
      window.addEventListener("scroll", () => {
           const header = document.querySelector("header")
           header.classList.toggle("scrolling", window.scrollY > 0)
         })
   </script>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <script>
+       var typed = new Typed('#typed', {
+       strings: ['Fullstack Developer', 'Junior Developer.', 'Softwarepreneur'],
+       loop: true,
+       typeSpeed: 75,
+       shuffle: true
+       });
+   </script>
 
 
 
